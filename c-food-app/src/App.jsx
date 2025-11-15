@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./component/Navbar";
 
 import Discount from "./component/Discount";
-import Menu from "./component/Menu";
+
 import Products from "./component/Products";
 import Banner from "./component/Banner";
 import Contact from "./component/Contact";
@@ -15,7 +15,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Discount />
-      <Menu />
+    
       <Products />
       <Banner />
       <Contact />

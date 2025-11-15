@@ -8,11 +8,15 @@ import burger2 from "../assets/images/burger2.png";
 // import burger3 from "../assets/images/burger3.png";
 import pasta1 from "../assets/images/pasta1.png";
 import fries1 from "../assets/images/fries1.png";
+import Menu from '../component/Menu'
 const Products = () => {
     const ViewBtn = () => {
         console.log("Vie Button Clicked!");
     }
   return (
+    <>
+    {/* category menu buttons */}
+    <Menu/>
     <section className="flex items-center justify-center my-20 px-10 sm:px-24 xl:px-48">
       {/* DiscountCards section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
@@ -91,6 +95,7 @@ const Products = () => {
       </div>
       
     </section>
+    </>
   );
 };
 
