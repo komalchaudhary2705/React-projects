@@ -18,31 +18,31 @@ const Navbar = () => {
       <div className="flex items-center gap-6">
         <ul className="flex items-center gap-4">
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
-            <Link to="/saved">
+            <Link to="/">
               <IoIosSave size={20} />
             </Link>
           </li>
 
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
-            <Link to="/notifications">
+            <Link to="/">
               <IoMdNotificationsOutline size={20} />
             </Link>
           </li>
 
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
-            <Link to="/messages">
+            <Link to="/">
               <MdOutlineMessage size={20} />
             </Link>
           </li>
 
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
-            <Link to="/listings">
+            <Link to="/">
               <LuLayoutList size={20} />
             </Link>
           </li>
 
           <li className="bg-orange-400 rounded-full w-8 h-8 flex items-center justify-center">
-            <Link to="/profile">
+            <Link to="/">
               <FaUserCircle size={20} />
             </Link>
           </li>
