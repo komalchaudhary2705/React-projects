@@ -1,5 +1,2 @@
 @import "tailwindcss";
 
-a:hover, a.active{
-  background: #e0ce0d;
-}
