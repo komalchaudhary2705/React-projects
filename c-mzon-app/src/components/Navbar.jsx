@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <button className="bg-white  font-semibold px-4 py-1 rounded shadow">
+        <button className="bg-white font-semibold px-5 py-2 rounded shadow">
           Start Selling
         </button>
       </div>
