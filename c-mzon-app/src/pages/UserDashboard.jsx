@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserDashboard = () => {
   return (
-    <div className=''>
+    <div className='bg-gray-100 w-full h-[88vh]'>
         
     </div>
   )
