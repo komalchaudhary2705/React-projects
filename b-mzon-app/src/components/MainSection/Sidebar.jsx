@@ -25,19 +25,19 @@ const Sidebar = () => {
           <MdOutlineAddHomeWork /> <Link to="/user/my-adverts">My Adverts</Link>
         </li>
 
-        <li className="pl-5 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
+        <li className="pl-5 gap-3 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
           <MdOutlineFeed /> <Link to="/user/feedback">Feedback</Link>
         </li>
 
-        <li className="pl-5 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
+        <li className="pl-5 gap-3 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
           <FaQuestionCircle /> <Link to="/user/faq">FAQ's</Link>
         </li>
 
-        <li className="pl-5 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
+        <li className="pl-5 gap-3 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
           <MdOutlineSettings /> <Link to="/user/settings">Settings</Link>
         </li>
 
-        <li className="pl-5 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
+        <li className="pl-5 gap-3 flex items-center py-2 hover:bg-[#1f999a] hover:text-white rounded-r">
           <TbLogout2 /> <Link to="/login">Logout</Link>
         </li>
       </ul>

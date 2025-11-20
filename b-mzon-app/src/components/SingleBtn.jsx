@@ -1,8 +1,8 @@
 import React from "react";
 
-const SingleBtn = ({btnText}) => {
+const SingleBtn = ({btnText, btnBgColor}) => {
   return (
-    <button className="text-sm bg-green-200 py-1 px-3 rounded-full">
+    <button className={`text-sm ${btnBgColor} py-1 px-3 rounded-full`}>
      {btnText}
     </button>
   );

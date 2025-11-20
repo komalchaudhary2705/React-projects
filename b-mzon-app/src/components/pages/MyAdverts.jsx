@@ -6,14 +6,14 @@ const MyAdverts = () => {
   return (
     <div>
       <RightTopNav title={"My Advert"}>
-        <SingleBtn btnText={"All"} />
-        <SingleBtn btnText={"Active"} />
-        <SingleBtn btnText={"Reviewing"} />
-        <SingleBtn btnText={"Decline"} />
-        <SingleBtn btnText={"Draft"} />
-        <SingleBtn btnText={"Closed"} />
+        <SingleBtn btnText={"All"} btnBgColor={"bg-teal-600 text-white"}/>
+        <SingleBtn btnText={"Active"} btnBgColor={"bg-gray-200"}/>
+        <SingleBtn btnText={"Reviewing"} btnBgColor={"bg-gray-200"} />
+        <SingleBtn btnText={"Decline"} btnBgColor={"bg-gray-200"} />
+        <SingleBtn btnText={"Draft"} btnBgColor={"bg-gray-200"} />
+        <SingleBtn btnText={"Closed"} btnBgColor={"bg-gray-200"}/>
       </RightTopNav>
-      <NoItem text={"No Advert Here"} />
+      <NoItem text={"No Advert Here"}  />
     </div>
   );
 };

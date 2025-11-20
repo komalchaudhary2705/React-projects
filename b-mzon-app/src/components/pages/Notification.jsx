@@ -7,10 +7,10 @@ import SingleBtn from "../SingleBtn";
 const Notification = () => {
   return (
     <>
-       <RightTopNav title={"Notification"}>
-        <SingleBtn btnText={"Mark All As Read"} />
+      <RightTopNav title={"Notification"}>
+        <SingleBtn btnText={"Mark All As Read"} btnBgColor={"bg-green-200"} />
       </RightTopNav>
-      <NoItem text={"No Notification Here"}/>
+      <NoItem text={"No Notification Here"} />
     </>
   );
 };
