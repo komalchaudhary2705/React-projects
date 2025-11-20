@@ -1,4 +1,3 @@
-// src/components/pages/Saved.jsx
 import React from "react";
 import RightTopNav from "../MainSection/RightSection/RightTopNav";
 

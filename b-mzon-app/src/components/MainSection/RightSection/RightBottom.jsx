@@ -1,4 +1,3 @@
-// src/components/MainSection/RightSection/RightBottom.jsx
 import React from "react";
 
 const RightBottom = ({ children }) => {

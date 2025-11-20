@@ -1,4 +1,3 @@
-// src/components/MainSection/RightSection/RightTopNav.jsx
 import React from "react";
 
 const RightTopNav = ({ title,children }) => {

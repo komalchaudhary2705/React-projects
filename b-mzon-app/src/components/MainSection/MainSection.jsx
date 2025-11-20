@@ -1,4 +1,3 @@
-// src/components/MainSection/MainSection.jsx
 import React from "react";
 import Sidebar from "./Sidebar";
 import RightMain from "./RightSection/RightMain";

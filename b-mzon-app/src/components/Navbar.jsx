@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoIosSave } from "react-icons/io";

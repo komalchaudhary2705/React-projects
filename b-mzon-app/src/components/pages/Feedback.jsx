@@ -1,4 +1,3 @@
-// src/components/pages/Notification.jsx
 import React from "react";
 import RightTopNav from "../MainSection/RightSection/RightTopNav";
 import RightBottom from "../MainSection/RightSection/RightBottom";
