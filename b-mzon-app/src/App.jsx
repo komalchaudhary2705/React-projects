@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import user from "./components/UserExist";
 import SellerForm from "./pages/SellerForm";
+import TableList from "./components/pages/TableList";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="saved" element={<Saved />} />
             <Route path="notifications" element={<Notification />} />
             <Route path="my-adverts" element={<MyAdverts />} />
+            <Route path="my-adverts" element={<TableList/>} />
             <Route path="faq" element={<Faq />} />
             <Route path="message" element={<Message />} />
             <Route path="list" element={<List />} />

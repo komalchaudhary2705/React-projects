@@ -2,6 +2,7 @@ import React from "react";
 import RightTopNav from "../MainSection/RightSection/RightTopNav";
 import { AiOutlineEdit } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
+import { TiTick } from "react-icons/ti";
 const Setting = () => {
   return (
     <div>
@@ -54,9 +55,8 @@ const Setting = () => {
             <div className="relative mt-1">
               <input
                 type="text"
-                value="+1 *** 2982 4544"
-                readOnly
-                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="+1 *** 2982 4544"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -64,15 +64,14 @@ const Setting = () => {
 
           {/* Government ID */}
           <div>
-            <label className="text-sm font-medium">
-              Government ID <span className="text-yellow-500">🛈</span>
+            <label className="text-sm font-medium flex items-center gap-2">
+              Government ID <span className="text-yellow-500"><TiTick className="border rounded-full"/></span>
             </label>
             <div className="relative mt-1">
               <input
                 type="text"
-                value="National ID Card"
-                readOnly
-                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="National ID Card"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -84,9 +83,8 @@ const Setting = () => {
             <div className="relative mt-1">
               <input
                 type="text"
-                value="Not Provided"
-                readOnly
-                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="Not Provided"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -98,9 +96,8 @@ const Setting = () => {
             <div className="relative mt-1 flex items-center">
               <input
                 type="password"
-                value="****************"
-                readOnly
-                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="****************"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
 
               <button className="absolute right-3 text-sm font-semibold text-black underline cursor-pointer">
