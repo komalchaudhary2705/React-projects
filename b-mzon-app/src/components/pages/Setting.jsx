@@ -15,7 +15,7 @@ const Setting = () => {
 
           <div>
             <h2 className="text-lg font-semibold">James Bond</h2>
-            <p className="text-gray-500 text-sm">jamesbond007@gmail.com</p>
+            <p className="text-gray-500 text-sm">jamesbond007@gmail.com</p>M
           </div>
         </div>
 
