@@ -11,17 +11,16 @@ const Setting = () => {
       <div className="p-6">
         {/* ==== Profile Header ==== */}
         <div className="flex items-center gap-4 mb-8 mt-6">
-                <FaUserCircle size={60} className="text-orange-500" />
-
+          <FaUserCircle size={60} className="text-orange-500" />
           <div>
             <h2 className="text-lg font-semibold">James Bond</h2>
-            <p className="text-gray-500 text-sm">jamesbond007@gmail.com</p>M
+            <p className="text-gray-500 text-sm">jamesbond007@gmail.com</p>
           </div>
         </div>
 
-        <hr className="mb-10" />
+        <hr className="mb-10 border-gray-300" />
 
-        {/* ==== Grid Section ==== */}
+        {/* ==== Form Section ==== */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Full Name */}
           <div>
@@ -29,9 +28,8 @@ const Setting = () => {
             <div className="relative mt-1">
               <input
                 type="text"
-                value="James Bond"
-                readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="James Bond"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -43,9 +41,8 @@ const Setting = () => {
             <div className="relative mt-1">
               <input
                 type="email"
-                value="johndeo245@gmail.com"
-                readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                placeholder="johndeo245@gmail.com"
+                className="w-full border border-gray-300 rounded-lg p-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -59,7 +56,7 @@ const Setting = () => {
                 type="text"
                 value="+1 *** 2982 4544"
                 readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -75,7 +72,7 @@ const Setting = () => {
                 type="text"
                 value="National ID Card"
                 readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -89,7 +86,7 @@ const Setting = () => {
                 type="text"
                 value="Not Provided"
                 readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
               />
               <AiOutlineEdit className="absolute right-3 top-3 text-gray-500 cursor-pointer" />
             </div>
@@ -103,7 +100,7 @@ const Setting = () => {
                 type="password"
                 value="****************"
                 readOnly
-                className="w-full border rounded-lg px-3 py-3 text-sm bg-white"
+                className="w-full border border-gray-300 rounded-lg px-3 py-3 text-sm bg-white"
               />
 
               <button className="absolute right-3 text-sm font-semibold text-black underline cursor-pointer">
