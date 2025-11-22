@@ -22,12 +22,12 @@ const TableList = () => {
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border border-gray-200 bg-gray-100 text-sm">
-              <th className="px-4 py-4">Advert</th>
-              <th className="px-4 py-4">Date</th>
-              <th className="px-4 py-4">Location</th>
-              <th className="px-4 py-4">Price</th>
-              <th className="px-4 py-4">Total View</th>
-              <th className="px-4 py-4">Action</th>
+              <th className="p-4">Advert</th>
+              <th className="p-4">Date</th>
+              <th className="p-4">Location</th>
+              <th className="p-4">Price</th>
+              <th className="p-4">Total View</th>
+              <th className="p-4">Action</th>
             </tr>
           </thead>
 

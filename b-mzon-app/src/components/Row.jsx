@@ -1,5 +1,5 @@
 import React from "react";
-import advImg from '../assets/images/laptop1.jpg'
+import advImg from "../assets/images/laptop1.jpg";
 import { FaRegEdit } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 const Row = () => {
@@ -28,9 +28,13 @@ const Row = () => {
       <td className="px-4 py-3 text-sm">23,040</td>
 
       {/* Action Icons */}
-      <td className="px-4 py-3 flex items-center gap-4">
-        <button className="text-gray-600 hover:text-black text-lg"><FaRegEdit /></button>
-        <button className="text-gray-600 hover:text-black text-lg"><RiDeleteBin6Line/></button>
+      <td className="flex items-center gap-4 relative">
+        <button className="text-gray-600 hover:text-black text-lg flex items-center absolute bottom-3 left-0">
+          <FaRegEdit />
+        </button>
+        <button className="text-gray-600 hover:text-black text-lg flex items-center absolute bottom-3 left-6">
+          <RiDeleteBin6Line />
+        </button>
       </td>
     </tr>
   );

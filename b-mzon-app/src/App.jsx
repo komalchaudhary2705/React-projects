@@ -23,16 +23,24 @@ const App = () => {
       <Navbar />
 
       <Routes>
+        {!user ? (
+          <Route path="/login" element={<Login />} />
+        ) : (
+          <Route path="/login" element={<Navigate to="/" replace />} />
+        )}
+
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="*"
-          element={
-            <h1 className="text-center mt-20 text-6xl font-bold">
-              Oops Page Not Found
-            </h1>
-          }
-        />
+
+        {user && (
+          <Route
+            path="*"
+            element={
+              <h1 className="text-center mt-20 text-6xl font-bold">
+                Oops Page Not Found
+              </h1>
+            }
+          />
+        )}
         {user && <Route path="/seller-form" element={<SellerForm />} />}
 
         {/* USER DASHBOARD ROUTES */}
@@ -44,8 +52,8 @@ const App = () => {
             {/* Child pages */}
             <Route path="saved" element={<Saved />} />
             <Route path="notifications" element={<Notification />} />
+            <Route path="my-adverts" element={<TableList />} />
             <Route path="my-adverts" element={<MyAdverts />} />
-            <Route path="my-adverts" element={<TableList/>} />
             <Route path="faq" element={<Faq />} />
             <Route path="message" element={<Message />} />
             <Route path="list" element={<List />} />

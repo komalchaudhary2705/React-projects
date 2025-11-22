@@ -5,16 +5,15 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdOutlineMessage } from "react-icons/md";
 import { LuLayoutList } from "react-icons/lu";
 import { FaUserCircle } from "react-icons/fa";
-import user from './UserExist'
+import user from "./UserExist";
 const Navbar = () => {
- 
-
   return (
     <nav className="bg-[#1f999a] py-4 px-2 md:px-[10%] flex items-center justify-between">
+      {/* logo */}
       <Link to="/" className="text-white text-xl font-bold">
         MZONE
       </Link>
-
+      {/* menu */}
       <div className="flex items-center gap-2 md:gap-6">
         <ul className="flex items-center gap-2 md:gap-4">
           {user && (
@@ -45,7 +44,7 @@ const Navbar = () => {
             </>
           )}
 
-          {/* User Settings (always visible) */}
+          {/* User Settings always Show */}
           <li className="bg-white text-orange-600 rounded-full p-1 flex items-center justify-center">
             <Link to="/user/settings">
               <FaUserCircle size={30} />
@@ -58,9 +57,11 @@ const Navbar = () => {
             </li>
           )}
         </ul>
-
-        <button className="bg-white font-semibold px-4 py-2 md:px-5 md:py-2 
-        rounded shadow cursor-pointer">
+        {/* Selling button always Show */}
+        <button
+          className="bg-white font-semibold px-4 py-2 md:px-5 md:py-2 
+        rounded shadow cursor-pointer"
+        >
           <Link to="/seller-form">Start Selling</Link>
         </button>
       </div>
