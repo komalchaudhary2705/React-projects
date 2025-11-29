@@ -29,12 +29,15 @@ const Calculator = () => {
   };
 
   return (
-    <div className="bg-[#161515] w-full h-screen flex items-center justify-center p-10">
-      <div className="w-[400px] p-4 border border-teal-700 rounded bg-transparent">
+    <div className="bg-[#161515] w-full h-screen flex items-center 
+    justify-center p-10">
+      <div className="w-[400px] p-4 border border-teal-700 
+      rounded bg-transparent">
         <input
           type="text"
           placeholder="0"
-          className="border border-teal-700 w-full text-right p-3 mb-8 text-3xl rounded text-white"
+          className="border border-teal-700 w-full text-right p-3 mb-8
+           text-3xl rounded text-white focus:outline-none"
           readOnly
           value={inputvalue}
         />
