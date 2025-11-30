@@ -5,7 +5,9 @@ const ProductList = () => {
   const [apiData, setApiData] = useState(productsData);
   console.log(apiData);
 
-  return <div>ProductList</div>;
+  return <div>
+    
+  </div>;
 };
 
 export default ProductList;
