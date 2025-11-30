@@ -18,8 +18,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black py-4 px-16">
-      <h1 className="text-3xl font-bold text-center py-6">Latest News</h1>
+    <div className="min-h-screen bg-black pt-10 py-4 px-16">
+ 
 
      
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6  p-4">
