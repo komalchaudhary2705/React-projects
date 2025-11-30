@@ -45,7 +45,7 @@ import womenTrouser from "../assets/images/women-trouser.jpg";
 const productsData = [
 
   // -------------------------------------
-  // ⭐ KIDS SECTION
+  //  KIDS SECTION
   // -------------------------------------
   {
     id: 1,
@@ -112,7 +112,7 @@ const productsData = [
   },
 
   // -------------------------------------
-  // ⭐ MEN SECTION
+  //  MEN SECTION
   // -------------------------------------
   {
     id: 10,
@@ -270,7 +270,7 @@ const productsData = [
   },
 
   // -------------------------------------
-  // ⭐ WOMEN SECTION
+  //  WOMEN SECTION
   // -------------------------------------
   {
     id: 32,
