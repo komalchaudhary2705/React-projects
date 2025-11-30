@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import productsData from "../assets/data";
 
 const ProductList = () => {
-  return (
-    <div>ProductList</div>
-  )
-}
+  console.log(productsData);
+  return <div>ProductList</div>;
+};
 
-export default ProductList
+export default ProductList;
