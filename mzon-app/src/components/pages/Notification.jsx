@@ -3,6 +3,7 @@ import RightTopNav from "../MainSection/RightSection/RightTopNav";
 
 import NoItem from "../NoItem";
 import SingleBtn from "../SingleBtn";
+import RightBottom from "../MainSection/RightSection/RightBottom";
 
 const Notification = () => {
   return (
@@ -10,7 +11,9 @@ const Notification = () => {
       <RightTopNav title={"Notification"}>
         <SingleBtn btnText={"Mark All As Read"} btnBgColor={"bg-green-200"} />
       </RightTopNav>
-      <NoItem text={"No Notification Here"} />
+      <RightBottom>
+        <NoItem text={"No Notification Here"} />
+      </RightBottom>
     </>
   );
 };
