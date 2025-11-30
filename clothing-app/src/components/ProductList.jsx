@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import productsData from "../assets/data";
 
 const ProductList = () => {
-  console.log(productsData);
+  const [apiData, setApiData] = useState(productsData);
+  console.log(apiData);
+
   return <div>ProductList</div>;
 };
 
