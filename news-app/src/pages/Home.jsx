@@ -23,12 +23,10 @@ const Home = () => {
 
      
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6  p-4">
-        {news.map((item, index) => (
+        {news.slice(5,10).map((item, index) => (
           <NewsCard key={index} item={item} />
         ))}
       </div>
     </div>
   );
 }
-
-export default Home;
