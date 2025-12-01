@@ -4,3 +4,46 @@
     background: rgb(0, 119, 93);
     color:white;
 }
+
+.hero-slideshow {
+  animation: heroSlide 25s infinite linear, heroMove 6s ease-in-out infinite;
+}
+
+@keyframes heroSlide {
+  0% {
+    background-image: url("/src/assets/images/men-printed.jpg");
+  }
+
+  20% {
+    background-image: url("/src/assets/images/men-printed2.jpg");
+  }
+
+  40% {
+    background-image: url("/src/assets/images/men-printed3.jpg");
+  }
+
+  60% {
+    background-image: url("/src/assets/images/men-printed4.jpg");
+  }
+
+  80% {
+    background-image: url("/src/assets/images/men-printed5.jpg");
+  }
+
+  100% {
+    background-image: url("/src/assets/images/men-printed.jpg");
+  }
+}
+
+/* Up & Down Parallax Effect */
+@keyframes heroMove {
+  0% {
+    background-position-y: 0px;
+  }
+  50% {
+    background-position-y: -20px; /* move up little */
+  }
+  100% {
+    background-position-y: 0px;
+  }
+}
