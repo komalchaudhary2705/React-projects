@@ -53,7 +53,7 @@ const productsData = [
     category: "kids",
     imageUrl: kidCap,
     price: 12.99,
-    desc: "Soft and stylish kid’s cap perfect for sunny days and outdoor fun."
+    desc: "Soft and stylish kid's cap perfect for sunny days and outdoor fun."
   },
   {
     id: 2,
