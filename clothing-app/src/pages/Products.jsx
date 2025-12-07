@@ -42,7 +42,7 @@ const Products = () => {
   }, [products, search, selectedCategory]);
 
   // ---------------------------------------
-  // SIMPLE PAGINATION LOGIC
+  //  PAGINATION
   // ---------------------------------------
   const totalPages = Math.ceil(filteredProducts.length / perPage);
   const start = (currentPage - 1) * perPage;
@@ -77,7 +77,6 @@ const Products = () => {
 
         {/* MAIN PRODUCT AREA */}
         <div className="md:w-4/5 flex flex-col gap-4">
-
           {/* SEARCH + PER PAGE */}
           <div className="flex flex-col md:flex-row md:justify-between gap-3 mb-4">
             <input
@@ -113,47 +112,57 @@ const Products = () => {
           </div>
 
           {/* ------------------------------------
-                EASY PAGINATION
+                 PAGINATION
           ------------------------------------ */}
           <div className="flex justify-center gap-2 mt-6 flex-wrap">
-
             {/* PREV */}
             <button
               disabled={currentPage === 1}
               onClick={() => setCurrentPage(currentPage - 1)}
               className={`px-4 py-2 rounded 
-                ${currentPage === 1 ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"}
+                ${
+                  currentPage === 1
+                    ? "bg-gray-300"
+                    : "bg-gray-200 hover:bg-gray-300"
+                }
               `}
             >
               Prev
             </button>
 
             {/* PAGE BUTTONS */}
-            {Array.from({ length: totalPages }, (_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentPage(i + 1)}
-                className={`px-4 py-2 rounded ${
-                  currentPage === i + 1
-                    ? "bg-teal-600 text-white"
-                    : "bg-gray-200 hover:bg-teal-600 hover:text-white"
-                }`}
-              >
-                {i + 1}
-              </button>
-            ))}
+            {[...Array(totalPages)].map((_, index) => {
+              const pageNumber = index + 1;
+
+              return (
+                <button
+                  key={pageNumber}
+                  onClick={() => setCurrentPage(pageNumber)}
+                  className={`px-4 py-2 rounded ${
+                    currentPage === pageNumber
+                      ? "bg-teal-600 text-white"
+                      : "bg-gray-200 hover:bg-teal-600 hover:text-white"
+                  }`}
+                >
+                  {pageNumber}
+                </button>
+              );
+            })}
 
             {/* NEXT */}
             <button
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage(currentPage + 1)}
               className={`px-4 py-2 rounded 
-                ${currentPage === totalPages ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"}
+                ${
+                  currentPage === totalPages
+                    ? "bg-gray-300"
+                    : "bg-gray-200 hover:bg-gray-300"
+                }
               `}
             >
               Next
             </button>
-
           </div>
         </div>
       </div>
